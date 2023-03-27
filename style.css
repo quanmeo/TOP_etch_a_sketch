@@ -1,33 +1,117 @@
 body {
-    background-color: bisque;
+    background-color: rgb(165, 165, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.controller {
+    width: 300px;
+    height: 400px;
+    background-color: blueviolet;
+
+    border-style: groove;
+    border-radius: 40px;
+
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.controller button {
+    width: 200px;
+    height: 40px;
+
+    border-radius: 15px;
+    border-style: none;
+
+    background-color: wheat;
+}
+
+input[type=color] {
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+    border: 0;
+    border-radius: 50%;
+}
+
+input[type=range] {
+    width: 120px;
+    height: 10px;
+}
+
+.numberChoosen {
+    width: 200px;
+    height: 40px;
+    padding: 0;
+
+    border-radius: 15px;
+    border-style: none;
+
+    background-color: wheat;
+    
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inputRange {
+    flex-shrink: 1;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#numberRectangle {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    flex-shrink: 1;
 }
 
 .container {
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    border-style: solid;
+    border: 1px;
+    border-color: black;
+    padding: 0;
+    margin: 0;
+
     display: flex;
     flex-direction: column;
-    flex: 1 1 auto;
-
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .row {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-
-    flex: 1 1 auto;
+    padding: 0;
+    border: 0;
+    margin: 0;
 }
 
-.row div,
-.column div {
-    width: 50px;
-    height: 50px;
-    border: 2px;
-    border-style: solid;
-    border-color: red;
-    background-color: aqua;
+.rectangle {
+    padding: 0;
+    border: 0;
+    margin: 0;
 
-    flex: 1 1 auto;
+    border-style: none;
+    background-color: snow;
+}
+
+.hover {
+    background-color: black;
 }
